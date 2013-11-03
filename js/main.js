@@ -15,4 +15,8 @@ $( document ).ready(function() {
     $('.portraights, .wedding').fadeOut();
   });
 
+  $('#contact').click(function() {
+    $(this).addClass('contact-active');
+    $('.contact').fadeIn();
+  });
 });
