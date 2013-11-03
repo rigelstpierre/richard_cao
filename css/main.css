@@ -146,11 +146,15 @@ nav {
           .container .portfolio ul li a:hover {
             color: white; }
     .container .portfolio .gallery {
+      clear: both;
       margin: 0 0 0 15px;
-      height: 500px; }
-      .container .portfolio .gallery .photo-sets {
-        width: 500px;
-        float: left; }
+      max-height: 500px;
+      width: 100%;
+      overflow-x: scroll;
+      display: block; }
+      .container .portfolio .gallery img {
+        float: left;
+        padding: 3px; }
   .container .text-block {
     max-height: 500px;
     width: 34%;
