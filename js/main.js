@@ -16,7 +16,13 @@ $( document ).ready(function() {
   });
 
   $('#contact').click(function() {
-    $(this).addClass('contact-active');
-    $('.contact').fadeIn();
-  });
+    if ($(this).hasClass('contact-active')){
+      $(this).removeClass('contact-active');
+      $('.contact').fadeOut();
+    }
+    else{
+      $(this).addClass('contact-active');
+      $('.contact').fadeIn();
+    }
+   });
 });
