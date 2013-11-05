@@ -180,14 +180,20 @@ nav {
 
 .contact {
   width: 100%;
-  height: 1200px;
+  height: 900px;
   z-index: 10;
   position: absolute;
   top: 0;
-  background: url("../img/contact-bg.png") repeat; }
+  background: url("../img/contact-bg.png") repeat;
+  display: none; }
   .contact form {
     margin: 140px 0 0 35px;
-    width: 500px; }
+    width: 800px; }
+    .contact form section {
+      width: 375px;
+      float: left; }
+      .contact form section:last-child {
+        margin: 0 0 0 15px; }
     .contact form input {
       width: 355px;
       height: 60px;

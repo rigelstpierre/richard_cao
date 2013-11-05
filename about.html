@@ -20,14 +20,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+
         <nav>
           <img src="img/logo.jpg" alt="" />
           <ul>
             <li><a href="about.html" class="active" />ab&Oslash;ut</a></li>
             <li><a href="portfolio.html" />p&Oslash;rtf&Oslash;li&Oslash;</a></li>
             <li><a href="#" />bl&Oslash;g</a></li>
-            <li><a href="#" />c&Oslash;ntact</a></li>
+            <li><a href="#" id="contact" />c&Oslash;ntact</a></li>
           </ul>
         </nav>
         <section class="container">
@@ -48,7 +48,27 @@ i look forward to getting to know you and offer my services in capturing your jo
                 <li><a href="#">ON TO BABY</a></li>
               </ul>
             </div>
-          </div> 
+          </div>
+          <div class="contact">
+            <form>
+              <section>
+                <input type="text" name="name" placeholder="Name:" />
+                <input type="text" name="spouse-name" placeholder="Future Spouse's Name:" />
+                <input type="email" name="email" placeholder="Email:" />
+                <input type="text" name="phone-number" placeholder="Phone:" />
+                <input type="text" name="wedding-date" placeholder="Wedding Date:" />
+                <input type="text" name="wedding-location" placeholder="Wedding Veune/Location:" />
+                <input type="text" name="budget" placeholder="ideal photography budget:" />
+                <input type="text" name="refferal" placeholder="How did you hear about me:" />
+              </section>
+              <section>
+                <textarea name="important" placeholder="What is most important to you on your wedding day:" style="height: 122px;"></textarea>
+                <textarea name="comments" placeholder="ADDITIONAL COMMENTS:" rows="10"></textarea>
+                <input type="submit" value="Submit">
+              </section>
+            </form>
+          </div>
+
         </section>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
