@@ -41,8 +41,10 @@ a
 
 nav 
   width: 180px
-  position: absolute
+  position: fixed
+  z-index: 20
   left: 0
+  background-color: rgba(255,255,255,0.7)
   img
     margin: 10px 0 0 18px
   ul
@@ -86,6 +88,8 @@ nav
     margin: 0 0 5px 0
     .post
       @include post-bg
+      &:hover
+        background: #ec6645
   .half-width
     position: relative
     float: left
@@ -136,8 +140,11 @@ nav
               font-style: italic
   .portfolio
     float: left
-    margin: 96px 0 0 0
+    margin-top: 115px
     ul
+      position: fixed
+      left: 159px
+      top: 59px
       margin: 0
       list-style: none
       li
@@ -165,8 +172,8 @@ nav
       width: 100%
       overflow-x: scroll
       display: block
-      img 
-        float: left
+      white-space: nowrap
+      img
         padding: 3px
 
   .text-block

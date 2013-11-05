@@ -33,8 +33,10 @@ a {
 
 nav {
   width: 180px;
-  position: absolute;
-  left: 0; }
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7); }
   nav img {
     margin: 10px 0 0 18px; }
   nav ul {
@@ -83,6 +85,8 @@ nav {
       height: 100%;
       background-position: center center;
       background-size: cover !important; }
+      .container .full-width .post:hover {
+        background: #ec6645; }
   .container .half-width {
     position: relative;
     float: left;
@@ -138,8 +142,11 @@ nav {
               font-style: italic; }
   .container .portfolio {
     float: left;
-    margin: 96px 0 0 0; }
+    margin-top: 115px; }
     .container .portfolio ul {
+      position: fixed;
+      left: 159px;
+      top: 59px;
       margin: 0;
       list-style: none; }
       .container .portfolio ul li {
@@ -165,9 +172,9 @@ nav {
       max-height: 500px;
       width: 100%;
       overflow-x: scroll;
-      display: block; }
+      display: block;
+      white-space: nowrap; }
       .container .portfolio .gallery img {
-        float: left;
         padding: 3px; }
   .container .text-block {
     max-height: 500px;
