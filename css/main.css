@@ -23,13 +23,28 @@ h2 {
   font-weight: normal;
   letter-spacing: 2px;
   line-height: 39px;
-  text-indent: 37px; }
+  text-indent: 37px;
+  position: absolute;
+  top: 85px; }
+
+h5 {
+  font-style: italic;
+  text-align: center;
+  border-bottom: 1px solid black;
+  letter-spacing: 2px; }
 
 a {
   color: black;
   text-decoration: none; }
   a:visted {
     color: black; }
+
+.left-column {
+  float: left;
+  width: 305px; }
+
+.right-column {
+  float: left; }
 
 nav {
   width: 180px;
@@ -61,8 +76,7 @@ nav {
 .container {
   position: relative;
   width: 86%;
-  left: 180px;
-  max-width: 2100px; }
+  left: 180px; }
   .container a.title {
     text-transform: uppercase;
     color: white;
@@ -106,8 +120,15 @@ nav {
   .container .about {
     position: relative;
     top: 85px;
-    height: 100%;
-    float: left; }
+    width: 4015px;
+    height: 500px;
+    float: left;
+    overflow-x: scroll;
+    display: block;
+    margin: 50px 0 0 15px; }
+    .container .about p {
+      font-size: 13px;
+      white-space: normal; }
     .container .about .featured {
       width: 324px;
       float: left;
@@ -141,6 +162,13 @@ nav {
               color: white;
               background: #ec6645;
               font-style: italic; }
+    .container .about .about-gallery {
+      float: left;
+      margin-left: 15px; }
+      .container .about .about-gallery img {
+        height: 500px;
+        margin: 0 15px 0 0;
+        float: left; }
   .container .portfolio {
     float: left;
     margin-top: 115px; }
@@ -177,13 +205,6 @@ nav {
       white-space: nowrap; }
       .container .portfolio .gallery img {
         padding: 3px; }
-  .container .text-block {
-    max-height: 500px;
-    width: 27%;
-    margin-left: 15px;
-    float: left; }
-    .container .text-block p {
-      font-size: 13px; }
 
 .contact {
   width: 100%;
@@ -225,3 +246,34 @@ nav {
       color: white;
       font-style: italic;
       letter-spacing: 3px; }
+
+.social {
+  width: 130px;
+  height: 25px;
+  clear: both;
+  padding: 0;
+  margin: 0 auto; }
+  .social li {
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0; }
+    .social li:last-child {
+      margin: 0 0 0 0; }
+  .social .facebook {
+    background: url("../img/social.png") no-repeat 0 0; }
+    .social .facebook:hover {
+      background: url("../img/social.png") no-repeat 0 -26px; }
+  .social .twitter {
+    background: url("../img/social.png") no-repeat -25px 0; }
+    .social .twitter:hover {
+      background: url("../img/social.png") no-repeat -25px -26px; }
+  .social .instagram {
+    background: url("../img/social.png") no-repeat -49px 0; }
+    .social .instagram:hover {
+      background: url("../img/social.png") no-repeat -49px -26px; }
+  .social .pintrest {
+    background: url("../img/social.png") no-repeat -74px 0; }
+    .social .pintrest:hover {
+      background: url("../img/social.png") no-repeat -74px -26px; }
