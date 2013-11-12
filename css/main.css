@@ -120,7 +120,7 @@ nav {
   .container .about {
     position: relative;
     top: 85px;
-    width: 4015px;
+    width: 4474px;
     height: 500px;
     float: left;
     overflow-x: scroll;
@@ -169,6 +169,8 @@ nav {
         height: 500px;
         margin: 0 15px 0 0;
         float: left; }
+        .container .about .about-gallery img:last-child {
+          margin: 0; }
   .container .portfolio {
     float: left;
     margin-top: 115px; }
