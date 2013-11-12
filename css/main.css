@@ -207,6 +207,26 @@ nav {
       white-space: nowrap; }
       .container .portfolio .gallery img {
         padding: 3px; }
+      .container .portfolio .gallery .post {
+        position: relative; }
+        .container .portfolio .gallery .post .meta {
+          text-align: center;
+          color: white;
+          letter-spacing: 2px;
+          position: absolute;
+          top: 0;
+          width: 96%;
+          height: 100%; }
+          .container .portfolio .gallery .post .meta h3 {
+            margin-top: 28%; }
+          .container .portfolio .gallery .post .meta h3, .container .portfolio .gallery .post .meta p {
+            font-style: italic;
+            font-size: 12px;
+            visibility: hidden; }
+          .container .portfolio .gallery .post .meta:hover {
+            background: url("../img/contact-bg.png") repeat; }
+            .container .portfolio .gallery .post .meta:hover h3, .container .portfolio .gallery .post .meta:hover p {
+              visibility: visible; }
 
 .contact {
   width: 100%;
@@ -279,3 +299,10 @@ nav {
     background: url("../img/social.png") no-repeat -74px 0; }
     .social .pintrest:hover {
       background: url("../img/social.png") no-repeat -74px -26px; }
+
+@media all and (max-width: 500px) and (min-width: 320px) {
+  nav {
+    display: none; }
+
+  .container {
+    left: 0; } }
