@@ -53,6 +53,14 @@ nav {
   z-index: 20;
   left: 0;
   background-color: rgba(255, 255, 255, 0.7); }
+  nav .logo {
+    display: block;
+    width: 150px;
+    height: 127px;
+    background: url("../img/logo.jpg") 0 0 no-repeat;
+    margin: 15px 0 0 15px; }
+    nav .logo:hover {
+      background: url("../img/logo.jpg") 0 -129px no-repeat; }
   nav img {
     margin: 10px 0 0 18px; }
   nav ul {
